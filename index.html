@@ -13,9 +13,11 @@
     <!-- Aplication Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onresize="size()">
     <header class="header">
         <a href="#" class="header-brand">Gallery</a>
+        <i class="header-menu fa-solid fa-bars"></i>
+        <i class="header-close fa-solid fa-xmark"></i>
         <nav class="header-navbar">
             <ul>
                 <li>
@@ -35,22 +37,22 @@
         <div class="header-social-media">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/david-teixeira-3363b51a6/?locale=en_US" target="_blank" rel="external">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="mailto: david.silvaxd32@gmail.com" rel="external">
                         <i class="fa-solid fa-envelope"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://wa.me/552198672116?text=hi,%20welcome.%20I%20look%20forward%20to%20talking%20with%20you!" target="_blank" rel="external">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://www.instagram.com/david_teixeira32/" target="_blank" rel="external">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                 </li>
@@ -98,7 +100,10 @@
         </div>
     </main>
     <footer>
-        <p>&copy; All rights reserved by David Teixeira</p>
+        <p><span>Gallery</span> &copy; All rights reserved by David Teixeira</p>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="javascript/menu.js"></script>
 </body>
 </html>

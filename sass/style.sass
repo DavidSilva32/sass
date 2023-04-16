@@ -24,12 +24,37 @@ body
     justify-content: space-between
     @include mixins.container
 
+    @include mixins.mobile
+        padding: 1.1rem
+        align-items: baseline
+
     &-brand
         color: variables.$primary-color
         font-size: 3rem
 
-    &-navbar
+    &-menu
+        display: none
 
+        @include mixins.mobile
+            display: flex
+            @include mixins.menu
+
+        &:hover
+            color: variables.$primary-color
+
+    &-close
+        display: none
+
+        @include mixins.mobile
+            @include mixins.menu
+
+        &:hover
+            color: variables.$primary-color    
+
+    &-navbar
+        @include mixins.mobile
+            display: none
+            
         ul
             height: 100%
             @include mixins.flex-center
@@ -47,6 +72,8 @@ body
                     color: variables.$secondary-color                
 
     &-social-media
+        @include mixins.mobile
+            display: none
 
         ul
             height: 100%
@@ -54,6 +81,9 @@ body
 
         li
             margin: 0 1rem
+
+            @include mixins.mobile
+                font-size: 1.5rem
 
             a
                 &:hover
@@ -66,6 +96,9 @@ body
     justify-content: space-between
     padding: 0
 
+    @include mixins.mobile
+        flex-direction: column
+
     &-card
         width: 31%
         height: 400px
@@ -73,6 +106,10 @@ body
         @include mixins.flex-center
         flex-direction: column
         color: variables.$primary-color
+
+        @include mixins.mobile
+            width: 90%
+            margin-bottom: 6%
 
         &-title
             font-size: 2rem
@@ -116,4 +153,11 @@ body
         @include mixins.bg-img('people.jpg') 
 
     #card-9
-        @include mixins.bg-img('meal.jpg')          
+        @include mixins.bg-img('meal.jpg')
+
+footer
+    text-align: center
+    padding-bottom: 2rem
+
+    span
+        color: variables.$secondary-color                  

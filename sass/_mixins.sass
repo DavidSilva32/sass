@@ -9,7 +9,12 @@
     display: flex
     align-items: center
     justify-content: center
-    
+
+@mixin menu
+    color: variables.$secondary-color
+    font-size: 2rem
+    cursor: pointer 
+       
 @mixin bg-img($img)
     background: url('../img/#{$img}') center no-repeat
     background-size: 100%
@@ -20,3 +25,7 @@
         background-size: 110%
         filter: grayscale(0%)
         background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/#{$img}')
+
+@mixin mobile
+    @media( max-width: 768px )
+        @content
