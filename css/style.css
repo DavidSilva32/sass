@@ -148,6 +148,7 @@ body ul {
   padding: 0.6rem 2rem;
   border: 2px solid #fff;
   color: #fff;
+  background-color: rgba(0, 0, 0, 0);
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
